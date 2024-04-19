@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D3A62F0E2BD1185B00BB9B27 /* PostureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A62F0D2BD1185B00BB9B27 /* PostureViewController.swift */; };
+		D3A62F0E2BD1185B00BB9B27 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A62F0D2BD1185B00BB9B27 /* SettingsViewController.swift */; };
+		D3A62F112BD11BD600BB9B27 /* PosturePackage in Resources */ = {isa = PBXBuildFile; fileRef = D3A62F0F2BD11BD600BB9B27 /* PosturePackage */; };
 		D3C7F5302BD00227007CA482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C7F52F2BD00227007CA482 /* AppDelegate.swift */; };
 		D3C7F5322BD00227007CA482 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C7F5312BD00227007CA482 /* SceneDelegate.swift */; };
-		D3C7F5342BD00227007CA482 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C7F5332BD00227007CA482 /* SettingsViewController.swift */; };
 		D3C7F5372BD00227007CA482 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D3C7F5362BD00227007CA482 /* Base */; };
 		D3C7F5392BD00228007CA482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C7F5382BD00228007CA482 /* Assets.xcassets */; };
 		D3C7F53C2BD00228007CA482 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D3C7F53B2BD00228007CA482 /* Base */; };
+		D3EE2F272BD27D74003A0E7B /* PosturePackage in Frameworks */ = {isa = PBXBuildFile; productRef = D3EE2F262BD27D74003A0E7B /* PosturePackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D3A62F0D2BD1185B00BB9B27 /* PostureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostureViewController.swift; sourceTree = "<group>"; };
+		D3A62F0D2BD1185B00BB9B27 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D3A62F0F2BD11BD600BB9B27 /* PosturePackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PosturePackage; sourceTree = "<group>"; };
 		D3C7F52C2BD00227007CA482 /* HealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C7F52F2BD00227007CA482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C7F5312BD00227007CA482 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3C7F5332BD00227007CA482 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D3C7F5362BD00227007CA482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3C7F5382BD00228007CA482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3C7F53B2BD00228007CA482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,17 +34,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3EE2F272BD27D74003A0E7B /* PosturePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3A62F102BD11BD600BB9B27 /* LocalPackages */ = {
+			isa = PBXGroup;
+			children = (
+				D3A62F0F2BD11BD600BB9B27 /* PosturePackage */,
+			);
+			path = LocalPackages;
+			sourceTree = "<group>";
+		};
 		D3C7F5232BD00227007CA482 = {
 			isa = PBXGroup;
 			children = (
+				D3A62F102BD11BD600BB9B27 /* LocalPackages */,
 				D3C7F52E2BD00227007CA482 /* HealthApp */,
 				D3C7F52D2BD00227007CA482 /* Products */,
+				D3EE2F252BD27D74003A0E7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,11 +75,17 @@
 				D3C7F53D2BD00228007CA482 /* Info.plist */,
 				D3C7F53A2BD00228007CA482 /* LaunchScreen.storyboard */,
 				D3C7F5352BD00227007CA482 /* Main.storyboard */,
-				D3A62F0D2BD1185B00BB9B27 /* PostureViewController.swift */,
+				D3A62F0D2BD1185B00BB9B27 /* SettingsViewController.swift */,
 				D3C7F5312BD00227007CA482 /* SceneDelegate.swift */,
-				D3C7F5332BD00227007CA482 /* SettingsViewController.swift */,
 			);
 			path = HealthApp;
+			sourceTree = "<group>";
+		};
+		D3EE2F252BD27D74003A0E7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +104,9 @@
 			dependencies = (
 			);
 			name = HealthApp;
+			packageProductDependencies = (
+				D3EE2F262BD27D74003A0E7B /* PosturePackage */,
+			);
 			productName = HealthApp;
 			productReference = D3C7F52C2BD00227007CA482 /* HealthApp.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A62F112BD11BD600BB9B27 /* PosturePackage in Resources */,
 				D3C7F5392BD00228007CA482 /* Assets.xcassets in Resources */,
 				D3C7F53C2BD00228007CA482 /* Base in Resources */,
 				D3C7F5372BD00227007CA482 /* Base in Resources */,
@@ -141,10 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3C7F5342BD00227007CA482 /* SettingsViewController.swift in Sources */,
 				D3C7F5302BD00227007CA482 /* AppDelegate.swift in Sources */,
 				D3C7F5322BD00227007CA482 /* SceneDelegate.swift in Sources */,
-				D3A62F0E2BD1185B00BB9B27 /* PostureViewController.swift in Sources */,
+				D3A62F0E2BD1185B00BB9B27 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +396,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3EE2F262BD27D74003A0E7B /* PosturePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PosturePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3C7F5242BD00227007CA482 /* Project object */;
 }
