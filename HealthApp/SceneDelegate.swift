@@ -23,9 +23,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let postureViewController = PostureViewController()
         postureViewController.delegate = self
+
+        let tabBarItem = UITabBarItem(title: "Posture", image: UIImage(systemName: "figure.stand"), selectedImage: UIImage(systemName: "figure.stand"))
+        postureViewController.tabBarItem = tabBarItem
+
         tabBarController?.viewControllers?.append(postureViewController)
         tabBarController?.viewControllers?.reverse()
         tabBarController?.selectedIndex = 0
+
         window.rootViewController = tabBarController
 
         self.window = window
